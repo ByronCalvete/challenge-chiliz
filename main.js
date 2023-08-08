@@ -62,10 +62,5 @@ function outputDate(dates) {
     const yearsFormat = (years > 0) ? `${pluralNames(years, 'year')}, ` : ''
     const monthsFormat = (months > 0) ? `${pluralNames(months, 'month')}, ` : ''
 
-    console.log('Years', years);
-    console.log('Months',months);
-    console.log('Days', totalDays);
-    console.log('---------');
-
     return `${yearsFormat}${monthsFormat}total ${totalDays} days`
 }
